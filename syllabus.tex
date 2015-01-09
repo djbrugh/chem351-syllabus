@@ -1,11 +1,22 @@
+%----------------------------------------------------------------------------
+% Course Syllabus for Chemistry 351 (c) 2015 by Dale J. Brugh
+
+% Course Syllabus for Chemistry 351 is released under a
+% Creative Commons Attribution-ShareAlike 4.0 International License.
+
+% See http://creativecommons.org/licenses/by-sa/4.0/ for
+% a description of your rights under this license. 
+%----------------------------------------------------------------------------
 \documentclass[letterpaper,oneside,onecolumn,11pt,article]{memoir}
+%
+% --- LOAD PACKAGES ---
+%
 \usepackage[T1]{fontenc}            % use T1 font encoding
 \usepackage{textcomp}
 \usepackage{courier}                % set courier as typewriter font
 \usepackage{times}                  % set times as text font
 \usepackage[scaled=0.92]{helvet}    % set Helvetica as the sans-serif font
 \usepackage{mtpro2}
-
 \usepackage{setspace}
 \usepackage{amsmath}
 \usepackage{graphicx,color}
@@ -15,28 +26,27 @@
 \usepackage{verbatim}
 \usepackage{caption}
 \usepackage{paralist}
-
 \usepackage{boxedminipage}
-
 \usepackage[bookmarks=true]{hyperref}
+%
+% --- HYPER SETUP ---
+%
 \hypersetup{
     unicode=false,          % non-Latin characters in Acrobat’s bookmarks
     pdftoolbar=true,        % show Acrobat’s toolbar?
     pdfmenubar=true,        % show Acrobat’s menu?
     pdffitwindow=true,      % page fit to window when opened
-    pdftitle={Syllabus: Chemistry 351 / Spring 2014}, 
+    pdftitle={Syllabus: Chemistry 351 / Spring 2015}, 
     pdfauthor={Dale J. Brugh},     % author
     pdfsubject={Physical Chemistry},   % subject of the document
     pdfnewwindow=true,      % links in new window
-    pdfkeywords={classes, ch351s14}, % list of keywords
+    pdfkeywords={classes, ch351s15}, % list of keywords
     colorlinks=true,       % false: boxed links; true: colored links
     linkcolor=black,          % color of internal links
     citecolor=green,        % color of links to bibliography
     filecolor=magenta,      % color of file links
     urlcolor=black           % color of external links
 }
-
-
 \definecolor{nicered}{rgb}{.647,.129,.149}
 \definecolor{mutedgrey}{rgb}{0.4,0.4,0.4}
 \definecolor{shadecolor}{cmyk}{0,0,0.25,0.07}
@@ -44,15 +54,12 @@
 \definecolor{MarginRed}{rgb}{0.8,0.0,0.0}
 \definecolor{MarginBlue}{rgb}{0.2,0.0,1.0}
 \definecolor{MarginGrey}{rgb}{0.4,0.4,0.4}
-
 %\renewcommand{\chapnumfont}{\bfseries\Huge\sffamily}
 %\renewcommand{\chaptitlefont}{\bfseries\Large\sffamily}
-
 \setsecheadstyle{\bfseries\Large\sffamily\raggedright}
 \setsubsecheadstyle{\bfseries\large\sffamily\raggedright}
 \setsubsubsecheadstyle{\bfseries\normalsize\sffamily\raggedright}
 \renewcommand \thesection{\bfseries\arabic{section}}
-
 \makeatletter 
 \newcommand\addRevisionData{%
 \begin{picture}(0,0)% 
@@ -65,7 +72,6 @@
 }%
 \end{picture}%
 }
-
 \flushbottom
 \setstocksize{11in}{8.5in}
 %\setlength{\parskip}{5pt}
@@ -86,28 +92,23 @@
 %
 \makepagestyle{courseinformation}
 \makerunningwidth{courseinformation}{\headwidth}
-
 \makeheadrule{courseinformation}{\headwidth}{\normalrulethickness}
 \makeheadposition{courseinformation}{flushright}{flushleft}{flushleft}{flushleft}
 \makeoddhead{courseinformation}%
-    {\sffamily Course Syllabus: Chemistry 351 / Spring 2014}{}{\sffamily\thepage}
+    {\sffamily Course Syllabus: Chemistry 351 / Spring 2015}{}{\sffamily\thepage}
 
-    \makeevenfoot{courseinformation}{}{}{\addRevisionData}
-    \makeoddfoot{courseinformation}{}{}{\addRevisionData}
-
+    \makeevenfoot{courseinformation}{}{}{}
+    \makeoddfoot{courseinformation}{}{}{}
 \makepagestyle{courseinformationtitle}
 \makerunningwidth{courseinformationtitle}{\headwidth}
 \makeheadposition{courseinformationtitle}{flushright}{flushleft}{flushleft}{flushleft}
-    \makeevenfoot{courseinformationtitle}{}{}{\addRevisionData}
-    \makeoddfoot{courseinformationtitle}{}{}{\addRevisionData}
-
+    \makeevenfoot{courseinformationtitle}{}{}{}
+    \makeoddfoot{courseinformationtitle}{}{}{}
 \pagestyle{courseinformation}
-
 \captionsetup{labelsep=colon,aboveskip=0.25cm,justification=RaggedRight,singlelinecheck=false,labelfont={bf,sf}}
-
-%===========================================================================
-% Margin Figure Command
-%===========================================================================
+%
+% --- MARGIN FIGURE COMMAND ---
+%
 \newcommand{\marginfigures}[4]{
 \marginpar{\centering
 \includegraphics[width=#1]{#2}
@@ -116,19 +117,16 @@
 \captionof{figure}{#3}
 \label{#4}}%
 }%
-
-%==========================================================================
-% Margin Note Command
-%==========================================================================
-
+%
+% --- MARGIN NOTE COMMAND ---
+%
 \newcommand{\marginnote}[2]
 {%
 \marginpar{\raggedright\vspace{#1}\begin{Spacing}{0.65}\sffamily{{\tiny$\blacktriangleright$~\scriptsize#2}}\end{Spacing}} %
 }
-
-%===========================================================================
-% Set Up The Title
-%===========================================================================
+%
+% --- SET UP TITLE ---
+%
 \setlength{\droptitle}{0.0in}
 \backmatter
 \pretitle{\noindent\huge\sffamily Course Syllabus \LARGE\par\noindent} 
@@ -137,59 +135,64 @@
 \postauthor{\par}
 \predate{}
 \postdate{\noindent\rule{\linewidth}{0.3pt}}
-
-\title{Chemistry 351 / Spring 2014}
+\title{Chemistry 351 / Spring 2015}
 \date{}
 \author{}
-
-%============================================================================
-% Begin Document
-%============================================================================
-
+%
+% --- BEGIN DOCUMENT ---
+%
 \begin{document}
 \setsecnumdepth{subsubsection}
 \maketitle
 %\setsecnumdepth{subsection}
 \thispagestyle{courseinformationtitle}
-
+%
+% --- INSTRUCTOR ---
+%
 \section{Instructor}
 \begin{tabular}{rl|rl}
 Name: & Dr. Dale J. Brugh & Office Location: & SCSC 262 \\
 Email: & \href{mailto:djbrugh@owu.edu}{djbrugh@owu.edu} & Office Phone: & 740-368-3530 \\
 %AIM: & roteric11 & Office Hours: & As Posted\\
 \end{tabular}
-
+%
+% --- MEETINGS ---
+%
 \section{Meetings}
 %\renewcommand{\arraystretch}{1.2}
 \begin{tabular}{crcrl}
 MWF & 10:00 am & to & 10:50 am & SCSC 167\\
 Tu & 12:10 pm & to & 1:00 pm & SCSC 167 \\
 \end{tabular}
-
+%
+% --- WEBSITE ---
+%
 \section{Website}
 The course website is located at \href{http://dephlo.org/pchem}{dephlo.org/pchem}.
-
+%
+% --- PREREQUISITES ---
+%
 \section{Prerequisites}
 To take this course you must have passed two semesters of general chemistry, two semesters of organic chemistry, two semesters of physics, two semesters of calculus, and one semester of physical chemistry that covers quantum mechanics.
-
+%
+% --- MATERIALS ---
+%
 \section{Materials}
 The following items are required for this course. Additional details can be found on the course website at \href{http://dephlo.org/pchem-materials}{dephlo.org/pchem-materials}.
 \begin{enumerate}
 \item \emph{Physical Chemistry} with MasteringChemistry by Thomas Engel and Phillip Reid, Third Edition, Prentice Hall (2013).  ISBN-13: 9780321766205
 \item \emph{Quanta, Matter, and Change} by Peter Atkins, Julio de Paula, and Ronald Friedman, First Edition, W.H. Freeman and Company (2009). ISBN-10: 07167-6117-3, ISBN-13: 978-0-7167-6117-4.
-
 \item Wolfram's \emph{Mathematica}.
-
 \item A working scientific calculator.
 \end{enumerate}
-
-%----------------------------------------------------------------------------
-% Time Requirement
-%----------------------------------------------------------------------------
+%
+% --- TIME REQUIREMENT ---
+%
 \section{Time Requirement}
-
 Each \marginnote{-0.1in}{Some students allow the assigned work in this class to fill all available time. This makes the course seem very time consuming. If you learn to focus properly, the work for this course can be completed in a reasonable time.} of the four weekly course meetings is 50 minutes in length, requiring a total of 3.33 hours per week. For each meeting you can expect to spend at least 2 hours outside of class reading, studying, and working exercises. Problem sets will require five to ten hours during weeks they are assigned. If your study habits are not well-developed, more time may be required. This course will typically require work over weekends.
-
+%
+% --- CONTENT ---
+%
 \section{Content}
 This course is an introduction to statistical mechanics, thermodynamics, and chemical kinetics with an emphasis on molecular derivation and interpretation of macroscopic properties and behaviors. The course topics are listed below. Topics are not necessarily covered in this order. Not all topics are covered in equal depth. 
 \begin{table}[h]
@@ -209,10 +212,9 @@ Chemical Equilibrium & Transport Phenomona \\
 \bottomrule
 \end{tabular}
 \end{table}
-
-%----------------------------------------------------------------------------
-% Goals
-%----------------------------------------------------------------------------
+%
+% --- GOALS ---
+%
 \section{Goals}
 Statistical \marginnote{-0.1in}{For example, you will be able to compute the heat capacity of substances using only knowledge of molecular structure, vibrational frequency, and electronic states.} mechanics connects the properties of individual atoms and molecules to the bulk properties of matter manifested in classical thermodynamics. It is a powerful tool that allows experimental results to be predicted with high accuracy. Classical thermodynamics allows the behavior of bulk matter to be predicted without any knowledge of its detailed structure. Chemical kinetics and dynamics allow reaction mechanisms to be predicted and the progress of reactions to be modeled. With these tools, you can predict how Nature will behave under a broad range of conditions. In this course I want to introduce you to this material so that you can better understand Nature at a variety of levels. 
 
@@ -232,12 +234,10 @@ I also want you to move closer to being a professional in this course. Because o
 \item improve your ability to formulate descriptions of the physical and chemical world in terms of mathematical models, and
 \item improve your ability to make clear and precise quantitative arguments.
 \end{inparaenum}
-
-%----------------------------------------------------------------------------
-% Learning Objective
-%----------------------------------------------------------------------------
+%
+% --- LEARNING OBJECTIVES ---
+%
 \section{Learning Objectives}
-
 Learning objectives are things you should be able to do at the end of the course. For each topic covered in this course, you are provided with a list of learning objectives called Be Able Tos, or BATS for short. A complete list of BATS for each course topic can be found on the module page for that topic. These BATS are very detailed (granular), and it might be difficult to see the overall objectives of the course from them.
 
  A higher level (less granular) list of learning objectives might be helpful. At the end of the course, you should be able to
@@ -253,31 +253,49 @@ Learning objectives are things you should be able to do at the end of the course
 \item analyze reaction mechanisms in terms of their rate laws, and 
 \item model concentration as a function of time for the species involved in any mechanism.
 \end{inparaenum}
-
+%
+% --- WEEKLY ROUTINE ---
+%
 \section{Weekly Routine}
 The \marginnote{-0.1in}{The course website contains detailed schedules and lists of assignments.} Monday, Wednesday, and Friday meetings are dedicated to lecture. The Tuesday noon meeting is dedicated to a written micro exam or a lecture. An exercise assignment is due at the start of most MWF meetings. A problem set is assigned weekly and due each Saturday. There are three exams, and they are on Tuesday outside of class time.
-
+%
+% --- THINGS I GRADE ---
+%
 \section{Things I Grade}
 You and I determine your progress in this course using scores derived from evaluating the quality and accuracy of your answers to questions posed in exercise assignments, problem sets, micro exams, exams, and a final exam. This section provides details for each of these evaluations
-
+%
+% --- Exercise Assignments ---
+%
 \subsection{Exercise Assignments}
 Exercise assignments consist of no more than two exercises that are generally simple and straightforward to complete. Solutions should be worked out on paper and submitted at the start of the meeting for which they are assigned. Exercise assignments can be found on the course website. Solutions for exercise assignments are provided on the course website after I grade them. Each exercise assignment is worth 10 points. 
-
+%
+% --- Problem Sets ---
+%
 \subsection{Problem Sets}
 Problem \marginnote{-0.1in}{The course website has detailed guidelines for preparing solutions for problems sets.} sets are challenging and more time-consuming than exercises. It is best to think of them as projects. Problem sets are typically assigned weekly and due every Saturday. Problem sets are posted on the course website. Solutions for problem sets are available in my office. Each problem set is worth 100 points.
-
+%
+% --- Micro Exams ---
+%
 \subsection{Micro Exams}
 A micro exam is given about two weeks prior to each exam at the start of a Tuesday noon meeting. Exact dates are in the course schedule. Micro exams require the entire period to complete, and you are only given the class period to complete them. The topics covered on each micro exam are listed on the course website. Solutions to micro exams are posted on the course website after they are graded. Each micro exam is worth 50 points.
-
+%
+% --- Exams ---
+%
 \subsection{Exams}
 There are three exams during the semester. Each is administered during a three-hour block of time that you select on an announced Tuesday. All exams are cumulative. Solutions for exams are available in my office. See the course website for the exam schedule. Each exam is weighted equally. We do not meet as a class on Tuesday at noon on exam day.
-
+%
+% --- Final Exam ---
+%
 \subsection{Final Exam}
 The \marginnote{-0.1in}{Make plans to be on campus through the end of the final exam.} final exam is given on the day and at the time specified by the Registrar. There are no exceptions. The final exam is three hours in length, and it is cumulative over the entire semester. No solutions to the final exam are posted, but you may review the grading by making an appointment with me. You may not take possession of the exam.
-
+%
+% --- THINGS I DO NOT GRADE ---
+%
 \section{Things I Do Not Grade}
 Each topic module is accompanied by a set of practice exercises. These exercises are recommended, but I never collect and grade them. It is essential that you work (or at least review) as many of the practice exercises as possible. Solutions for practice exercises from the course textbooks are available outside my office. Solutions for other practice exercises can be found on the course website.
-
+%
+% --- COURSE SCORE ---
+%
 \section{Course Score}
 Your \marginnote{-0.1in}{The scores for your lowest 5 exercise assignments and your lowest 1 problem set will be dropped.} course score is a weighted average of the scores you earn on exercise assignments, problem sets, micro exams, and exams. These scores are weighted according to the percentages shown in Table~\ref{tab:weights}. Before computing your final course score, I will drop the scores for your lowest five (5) exercise assignments and your lowest one (1) problem set. 
 \begin{table}[h]
@@ -293,10 +311,11 @@ Final Exam & 25\% \\
 \bottomrule
 \end{tabular}
 \end{table}
-
+%
+% --- LETTER GRADE ---
+%
 \section{Letter Grade}
 Letter grades are assigned at the end of the course according to the minimum course score requirements listed in Table~\ref{tab:lettergrades}. Course scores below $55\%$ are considered failing. Please see \href{http://dephlo.net/lettergrades}{dephlo.net/lettergrades} for more detail about how your course letter grade is determined. 
-
 \begin{table}[h]
 \caption{\sffamily Minimum course scores necessary for each letter grade.}
 \label{tab:lettergrades}
@@ -311,9 +330,18 @@ Letter grades are assigned at the end of the course according to the minimum cou
 \bottomrule
 \end{tabular}
 \end{table}
-
+%
+% --- ADDITIONAL INFORMATION ---
+%
 \section{Additional Information}
-
 Please see the course website at \href{http://dephlo.net/pchem}{dephlo.net/pchem} for additional information such as suggestions for success, detailed course policies, problem set guidelines, course schedule, and solutions. 
+%
+% ---LICENSE AND SOURCE CODE ---
+%
+\section{License and Source Code}
+\copyright\ 2014 by Dale J. Brugh. Course Syllabus for Chemistry 351 (2015) is made available under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). See \href{https://creativecommons.org/licenses/by-sa/4.0/}{https://creativecommons.org/licenses/by-sa/4.0/} for details about your rights under this license. The \LaTeX\ source code is available under the same license from Github at \href{https://github.com/djbrugh/chem351}{https://github.com/djbrugh/chem351}.
+
+\vspace{0.25in}
+\noindent\includegraphics[width=1in]{figs/cc-by-sa.pdf}
 
 \end{document}
